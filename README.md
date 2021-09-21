@@ -13,7 +13,7 @@
 
 Issue、PR、纠错、资料、选课/考试攻略，完全欢迎！来自大家的关注、维护和贡献，才是让这个攻略继续存在的动力~
 
-如果希望匿名贡献，可以email至此邮箱，注明"REKCARC-NJFU-Courses"即可：sunsky@njfu.edu.cn
+如果希望匿名贡献，可以email至此邮箱，注明"NJFU-Courses"即可：sunsky@njfu.edu.cn
 
 
 ## 收录
