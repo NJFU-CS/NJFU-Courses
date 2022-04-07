@@ -1,0 +1,9 @@
+ name: test num: 0 gender: Man
+ Score:  English: 0 Math: 0 program_design: 0 PE:0
+
+ name: gk num: 99 gender: Woman
+ Score:  English: 98 Math: 97 program_design: 96 PE:95
+
+ name: jyf num: 100 gender: Man
+ Score:  English: 100 Math: 100 program_design: 100 PE:100
+
