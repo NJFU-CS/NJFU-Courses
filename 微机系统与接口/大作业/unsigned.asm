@@ -1,0 +1,53 @@
+DATA SEGMENT
+N DW 1011111101011011B
+DATA ENDS
+
+STACK SEGMENT STACK
+DW 20H DUP(?)
+TOP LABEL WORD
+STACK ENDS
+
+CODE SEGMENT
+    ASSUME DS:DATA,CS:CODE,SS:STACK
+    P PROC FAR
+
+    MOV AX,DATA
+    MOV DS,AX
+
+    MOV AX,STACK
+    MOV SS,AX
+    LEA SP,TOP
+
+    MOV BX,N
+
+
+    XOR CX,CX   
+    MOV AX,BX   
+
+L1: MOV DX,0        
+    MOV BX,10
+
+    ;AX DX
+    DIV BX  
+    PUSH DX 
+    INC CX
+    CMP AX,0
+    JE INPUT
+    JMP L1
+
+INPUT:  
+    POP DX
+    ADD DL,30H
+    MOV AH,02H
+    INT 21H
+    LOOP INPUT
+
+
+
+EXIT:
+    MOV AH,4CH
+    INT 21H
+
+    P ENDP  
+    CODE ENDS   
+    END P 
